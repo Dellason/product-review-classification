@@ -18,6 +18,8 @@
 
 ---
 
+> **Try it:** an interactive site in [`web/`](web/) runs the model in the browser: type a review and watch each word pull it positive or negative, decode three-star reviews, explore the vocabulary and slide the decision threshold.
+
 Two JSON files — review text and review scores — are merged, cleaned and turned into TF-IDF
 features. Logistic regression and a decision tree then learn two tasks: is a review **positive or
 negative**, and will readers find it **helpful**?
@@ -87,6 +89,7 @@ predicting "helpful".
 │   └── brief.pdf                   # original module brief
 ├── scripts/
 │   └── make_figures.py
+├── web/                        # interactive site (React + Vite)
 └── requirements.txt
 ```
 
