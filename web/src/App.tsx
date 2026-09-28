@@ -4,6 +4,7 @@ import ThreeStars from "./ThreeStars";
 import Vocabulary from "./Vocabulary";
 import Accuracy from "./Accuracy";
 import Mess from "./Mess";
+import ThemeToggle from "./ThemeToggle";
 import { makeReader } from "./model";
 import { count, loadData, type Data } from "./data";
 
@@ -27,15 +28,20 @@ export default function App() {
   return (
     <>
       <a className="skip" href="#main">Skip to the review box</a>
-      <header className="wrap topbar">
-        <a className="brand" href="#main">Read between the stars</a>
-        <nav aria-label="Sections">
-          <a href="#three-stars">Three stars</a>
-          <a href="#words">Words</a>
-          <a href="#accuracy">Accuracy</a>
-          <a href="#cleaning">Cleaning</a>
-        </nav>
-      </header>
+      <div className="bar">
+        <header className="wrap topbar">
+          <a className="brand" href="#main">Read between the stars</a>
+          <div className="topbar-end">
+            <nav aria-label="Sections">
+              <a href="#three-stars">Three stars</a>
+              <a href="#words">Words</a>
+              <a href="#accuracy">Accuracy</a>
+              <a href="#cleaning">Cleaning</a>
+            </nav>
+            <ThemeToggle />
+          </div>
+        </header>
+      </div>
 
       <main id="main">
         <section className="wrap hero" aria-labelledby="title">
