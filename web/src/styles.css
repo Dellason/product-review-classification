@@ -12,7 +12,9 @@
   --rule: #d8d4e3;
   --violet: #4e3db5;
   --pos: #2a78d6;
-  --neg: #eb6834;
+  --neg: #d6531c;
+  --pos-text: #1b5aa9;
+  --neg-text: #a03c16;
   --pos-mark: 42 120 214;
   --neg-mark: 235 104 52;
   --shadow: 0 1px 0 rgb(28 24 41 / 0.05), 0 22px 44px -30px rgb(28 24 41 / 0.5);
@@ -41,6 +43,8 @@
     --violet: #aa9dff;
     --pos: #3987e5;
     --neg: #d95926;
+    --pos-text: #7db0f0;
+    --neg-text: #f0915f;
     --pos-mark: 57 135 229;
     --neg-mark: 217 89 38;
     --shadow: 0 1px 0 rgb(0 0 0 / 0.35), 0 22px 44px -30px rgb(0 0 0 / 0.9);

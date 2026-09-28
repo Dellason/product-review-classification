@@ -65,7 +65,7 @@ function Card({ card, read }: { card: NeutralCard; read: (t: string) => Reading 
     <article className="panel card">
       <div className="row" style={{ justifyContent: "space-between" }}>
         <span className="small muted">3 stars · {card.date.slice(0, 4)}</span>
-        <span className="small"><b style={{ color: p >= 0.5 ? "var(--pos)" : "var(--neg)" }}>{pct(p >= 0.5 ? p : 1 - p, Math.abs(p - 0.5) < 0.05 ? 1 : 0)} {p >= 0.5 ? "positive" : "negative"}</b></span>
+        <span className="small"><b style={{ color: p >= 0.5 ? "var(--pos-text)" : "var(--neg-text)" }}>{pct(p >= 0.5 ? p : 1 - p, Math.abs(p - 0.5) < 0.05 ? 1 : 0)} {p >= 0.5 ? "positive" : "negative"}</b></span>
       </div>
       <h3>{card.title || "Untitled review"}</h3>
       <div className={`text ${long && !open ? "clipped" : ""}`}><Highlighted chunks={reading.chunks} /></div>

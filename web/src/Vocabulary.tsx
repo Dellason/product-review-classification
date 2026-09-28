@@ -107,8 +107,8 @@ export default function Vocabulary({ model, trained }: { model: Model; trained: 
         <div className="panel" style={{ display: "grid", gap: 10 }} aria-live="polite">
           <p style={{ fontFamily: "var(--serif)", fontSize: "var(--step-2)", fontWeight: 600 }}>{current.term}</p>
           <div className="stats" style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))" }}>
-            <div className="stat"><b style={{ color: current.s >= 0 ? "var(--pos)" : "var(--neg)" }}>{current.s >= 0 ? "+" : "−"}{Math.abs(current.s).toFixed(2)}</b><span>sentiment weight</span></div>
-            <div className="stat"><b style={{ color: current.h >= 0 ? "var(--pos)" : "var(--neg)" }}>{current.h >= 0 ? "+" : "−"}{Math.abs(current.h).toFixed(2)}</b><span>helpfulness weight</span></div>
+            <div className="stat"><b style={{ color: current.s >= 0 ? "var(--pos-text)" : "var(--neg-text)" }}>{current.s >= 0 ? "+" : "−"}{Math.abs(current.s).toFixed(2)}</b><span>sentiment weight</span></div>
+            <div className="stat"><b style={{ color: current.h >= 0 ? "var(--pos-text)" : "var(--neg-text)" }}>{current.h >= 0 ? "+" : "−"}{Math.abs(current.h).toFixed(2)}</b><span>helpfulness weight</span></div>
           </div>
           <p className="small muted">
             Used in {count(current.df)} of {count(trained)} reviews. It ranks {count(rank)} of {count(words.length)} for {head === "sentiment" ? "positivity" : "helpfulness"}.
