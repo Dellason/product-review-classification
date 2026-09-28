@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <title>Product Review Classification</title>
+  <defs>
+    <path id="star" d="M0-17l5 10.5 11.5 1.6-8.3 8.1 2 11.5L0 9.3l-10.3 5.4 2-11.5-8.3-8.1L-5-7.5z"/>
+  </defs>
+  <rect width="1600" height="1000" fill="#d8d1e8"/>
+
+  <!-- Stacked review cards -->
+  <g stroke="#1a1f2c" stroke-width="5" stroke-linejoin="round">
+    <rect x="170" y="210" width="470" height="210" rx="22" fill="#fcfcfb" transform="rotate(-4 405 315)"/>
+    <rect x="190" y="400" width="470" height="210" rx="22" fill="#fcfcfb" transform="rotate(2 425 505)"/>
+    <rect x="170" y="590" width="470" height="210" rx="22" fill="#fcfcfb" transform="rotate(-2 405 695)"/>
+  </g>
+
+  <!-- Card 1: five stars, "great" highlighted -->
+  <g transform="rotate(-4 405 315)">
+    <g fill="#2a78d6"><use href="#star" x="225" y="262"/><use href="#star" x="265" y="262"/><use href="#star" x="305" y="262"/><use href="#star" x="345" y="262"/><use href="#star" x="385" y="262"/></g>
+    <rect x="210" y="300" width="120" height="34" rx="8" fill="#2a78d6" fill-opacity="0.18"/>
+    <text x="222" y="325" font-family="IBM Plex Mono, Menlo, monospace" font-size="24" fill="#1a1f2c">great</text>
+    <rect x="345" y="310" width="240" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+    <rect x="210" y="355" width="330" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+  </g>
+  <!-- Card 2: three stars, the ambiguous middle -->
+  <g transform="rotate(2 425 505)">
+    <g fill="#52514e"><use href="#star" x="245" y="452"/><use href="#star" x="285" y="452"/><use href="#star" x="325" y="452"/></g>
+    <g fill="none" stroke="#52514e" stroke-width="3"><use href="#star" x="365" y="452"/><use href="#star" x="405" y="452"/></g>
+    <rect x="230" y="500" width="300" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+    <rect x="230" y="540" width="380" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+  </g>
+  <!-- Card 3: one star, "worst" highlighted -->
+  <g transform="rotate(-2 405 695)">
+    <g fill="#eb6834"><use href="#star" x="225" y="642"/></g>
+    <g fill="none" stroke="#eb6834" stroke-width="3"><use href="#star" x="265" y="642"/><use href="#star" x="305" y="642"/><use href="#star" x="345" y="642"/><use href="#star" x="385" y="642"/></g>
+    <rect x="210" y="690" width="200" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+    <rect x="425" y="680" width="120" height="34" rx="8" fill="#eb6834" fill-opacity="0.2"/>
+    <text x="437" y="705" font-family="IBM Plex Mono, Menlo, monospace" font-size="24" fill="#1a1f2c">worst</text>
+    <rect x="210" y="740" width="300" height="14" rx="7" fill="#1a1f2c" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Arrow into the vectoriser -->
+  <path d="M690 505h120" stroke="#1a1f2c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M795 490l18 15-18 15" stroke="#1a1f2c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- TF-IDF matrix -->
+  <g stroke="#1a1f2c" stroke-width="4">
+    <rect x="840" y="385" width="240" height="240" rx="18" fill="#fcfcfb"/>
+  </g>
+  <g fill="#4a3aa7">
+    <rect x="868" y="413" width="36" height="36" rx="6" fill-opacity="0.85"/><rect x="920" y="413" width="36" height="36" rx="6" fill-opacity="0.15"/><rect x="972" y="413" width="36" height="36" rx="6" fill-opacity="0.45"/><rect x="1024" y="413" width="36" height="36" rx="6" fill-opacity="0.1"/>
+    <rect x="868" y="465" width="36" height="36" rx="6" fill-opacity="0.1"/><rect x="920" y="465" width="36" height="36" rx="6" fill-opacity="0.6"/><rect x="972" y="465" width="36" height="36" rx="6" fill-opacity="0.15"/><rect x="1024" y="465" width="36" height="36" rx="6" fill-opacity="0.8"/>
+    <rect x="868" y="517" width="36" height="36" rx="6" fill-opacity="0.35"/><rect x="920" y="517" width="36" height="36" rx="6" fill-opacity="0.1"/><rect x="972" y="517" width="36" height="36" rx="6" fill-opacity="0.9"/><rect x="1024" y="517" width="36" height="36" rx="6" fill-opacity="0.2"/>
+    <rect x="868" y="569" width="36" height="36" rx="6" fill-opacity="0.15"/><rect x="920" y="569" width="36" height="36" rx="6" fill-opacity="0.7"/><rect x="972" y="569" width="36" height="36" rx="6" fill-opacity="0.1"/><rect x="1024" y="569" width="36" height="36" rx="6" fill-opacity="0.5"/>
+  </g>
+  <text x="960" y="668" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="24" fill="#1a1f2c" fill-opacity="0.7">TF-IDF</text>
+
+  <!-- Split into positive and negative -->
+  <path d="M1110 505c60 0 70-120 150-120M1110 505c60 0 70 120 150 120" stroke="#1a1f2c" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="1330" cy="385" r="62" fill="#2a78d6" stroke="#1a1f2c" stroke-width="5"/>
+  <path d="M1305 385h50M1330 360v50" stroke="#fcfcfb" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="1330" cy="625" r="62" fill="#eb6834" stroke="#1a1f2c" stroke-width="5"/>
+  <path d="M1305 625h50" stroke="#fcfcfb" stroke-width="9" stroke-linecap="round"/>
+</svg>
