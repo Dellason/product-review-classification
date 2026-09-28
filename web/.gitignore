@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# The project ignores *.html notebook exports; the site's entry page is source.
+!index.html
