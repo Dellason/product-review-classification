@@ -142,7 +142,7 @@ input[type="search"] { width: 100%; border: 1px solid var(--rule); background: v
 
 /* ---------- Charts ---------- */
 .chart-frame { position: relative; }
-.chart { display: block; overflow: visible; }
+.chart { display: block; overflow: visible; max-width: 100%; }
 .chart text { fill: var(--ink-soft); font-size: 11px; font-family: var(--sans); }
 .chart .strong { fill: var(--ink); font-weight: 600; }
 .chart .grid line { stroke: var(--rule); }
