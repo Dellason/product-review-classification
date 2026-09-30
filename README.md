@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jjmensah.github.io/enam_portfolio/projects/product-review-classification/"><img src="https://img.shields.io/badge/Case_study-portfolio-2ea44f" alt="Case study"></a>
+  <a href="https://dellason.github.io/projects/product-review-classification/"><img src="https://img.shields.io/badge/Case_study-portfolio-2ea44f" alt="Case study"></a>
   <img src="https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white" alt="pandas">
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white" alt="scikit-learn">

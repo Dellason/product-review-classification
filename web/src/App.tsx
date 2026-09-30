@@ -8,7 +8,7 @@ import ThemeToggle from "./ThemeToggle";
 import { makeReader } from "./model";
 import { count, loadData, type Data } from "./data";
 
-const PORTFOLIO = "https://jjmensah.github.io/enam_portfolio/";
+const PORTFOLIO = "https://dellason.github.io/";
 const CASE_STUDY = `${PORTFOLIO}projects/product-review-classification/`;
 
 export default function App() {

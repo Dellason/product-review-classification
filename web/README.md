@@ -2,7 +2,7 @@
 
 An interactive site for the product review classification project. The notebook's TF-IDF and logistic-regression models run in the browser, so visitors can type a review and watch every word the model knows pull it towards positive or negative.
 
-**Live:** https://jjmensah.github.io/enam_portfolio/lab/reviews/, served from the portfolio's `public/lab/reviews/`. Run `scripts/sync_lab.sh reviews product-review-classification` in `enam_portfolio` to publish a new build.
+**Live:** https://dellason.github.io/lab/reviews/, served from the portfolio's `public/lab/reviews/`. Run `scripts/sync_lab.sh reviews product-review-classification` in `enam_portfolio` to publish a new build.
 
 ## Sections
 
