@@ -4,4 +4,5 @@ scikit-learn
 nltk
 matplotlib
 seaborn
+beautifulsoup4
 jupyter
